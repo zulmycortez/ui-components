@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import MenuIcon from '../svg/MenuIcon'
 import NavBarStyle from './NavBarStyle'
 
-const Items = ({ items }) => (
+const Items = ({ items, onItemClick }) => (
   <div className="items">
     {items.map(item => (
       <div
         key={item.name}
         className="item"
+        onClick={() => { onItemClick(item.url) }}
       >
         {item.name}
       </div>
@@ -17,6 +19,11 @@ const Items = ({ items }) => (
 
 const NavBar = ({ items }) => {
   const [on, setOn] = useState(false)
+  const history = useHistory()
+
+  const onItemClick = url => {
+    history.push(url)
+  }
 
   return (
     <NavBarStyle>
@@ -28,7 +35,13 @@ const NavBar = ({ items }) => {
       >
         <MenuIcon />
       </div>
-      {on && <Items items={items} />}
+      {on && (
+        <Items
+          items={items}
+          onItemClick={onItemClick}
+        />
+      )
+      }
     </NavBarStyle>
   )
 }

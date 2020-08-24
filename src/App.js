@@ -2,7 +2,8 @@ import React from 'react'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import navItems from './utils/navItems'
-import Home from './Home'
+import Home from './pages/Home/Home'
+import SliderPage from './pages/SliderPage/SliderPage'
 import Footer from './components/Footer'
 import AppStyle from './AppStyle'
 
@@ -14,6 +15,7 @@ const App = () => {
         <NavBar items={navItems} />
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/Slider" exact component={SliderPage} />
           </Switch>
         </div>
       </BrowserRouter>

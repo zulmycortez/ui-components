@@ -1,27 +1,18 @@
 const navItems = [
   {
     name: 'Home',
-    url: ''
+    url: '/'
   },
-  {
-    name: 'Tab',
-    category: 'Navigation',
-    url: ''
-  },
+
   {
     name: 'Loader',
     category: 'Loading',
-    url: ''
+    url: '/loader'
   },
   {
-    name: 'Skelaton',
-    category: 'Loading',
-    url: ''
-  },
-  {
-    name: 'Switch',
+    name: 'Slider',
     category: 'Form',
-    url: ''
+    url: '/Slider'
   },
 ]
 

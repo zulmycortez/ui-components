@@ -1,5 +1,5 @@
 import React from 'react'
-import PageStyle from './components/PageStyle'
+import PageStyle from '../../components/PageStyle'
 
 const Home = () => {
   return (
