@@ -5,14 +5,19 @@ const navItems = [
   },
 
   {
-    name: 'Loader',
-    category: 'Loading',
-    url: '/loader'
+    name: 'Basic Form',
+    category: 'Form',
+    url: '/basic-form'
   },
   {
-    name: 'Slider',
+    name: 'Switch',
     category: 'Form',
-    url: '/Slider'
+    url: '/switch'
+  },
+  {
+    name: 'Checkbox',
+    category: 'Form',
+    url: '/checkbox'
   },
 ]
 

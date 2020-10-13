@@ -6,8 +6,10 @@ import NavBarStyle from './NavBarStyle'
 const Items = ({ items, onItemClick }) => (
   <div className="items">
     {items.map(item => (
-      <div
+      <div 
         key={item.name}
+        role="menu"
+        tabIndex={0}
         className="item"
         onClick={() => { onItemClick(item.url) }}
       >

@@ -1,16 +1,15 @@
 import React from 'react'
-import SliderStyle from './SliderStyle'
+import SwitchStyle from './SwitchStyle'
 
-const Slider = ({ value, name, onChange, label, ...props }) => {
+const Switch = ({ value, name, onChange, label, ...props }) => {
   const onSliderChange = e => {
     e.preventDefault()
     onChange({ target: { name, value: !value }})
   }
 
   return (
-    <SliderStyle
+    <SwitchStyle
       value={value}
-      role="slider"
       onClick={onSliderChange}
     >
       <div value={value} className="__slider">
@@ -19,8 +18,8 @@ const Slider = ({ value, name, onChange, label, ...props }) => {
       <div className="__slider-message">
         {label}
       </div>
-    </SliderStyle>
+    </SwitchStyle>
   )
 }
 
-export default Slider
+export default Switch

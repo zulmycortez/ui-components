@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import PageStyle from '../../components/PageStyle'
 import PageTitle from '../../components/PageTitle'
-import Slider from '../../components/Slider'
+import Switch from '../../components/Switch'
 import Section from '../../components/Section'
 
-const SliderPage = () => {
+const SwitchPage = () => {
   const [on, setOn] = useState(false)
 
   const onSliderChange = () => { setOn(!on) }
@@ -12,7 +12,7 @@ const SliderPage = () => {
   return (
     <PageStyle>
       <PageTitle title="Slider" />
-      <Slider 
+      <Switch 
         value={on}
         onChange={onSliderChange}
         label="Turn on notifications"
@@ -24,4 +24,4 @@ const SliderPage = () => {
   )
 }
 
-export default SliderPage
+export default SwitchPage

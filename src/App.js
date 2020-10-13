@@ -3,9 +3,11 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import navItems from './utils/navItems'
 import Home from './pages/Home/Home'
-import SliderPage from './pages/SliderPage/SliderPage'
+import SwitchPage from './pages/SwitchPage/SwitchPage'
 import Footer from './components/Footer'
 import AppStyle from './AppStyle'
+import BasicForm from './pages/BasicForm/BasicForm'
+import CheckboxPage from './pages/CheckboxPage/CheckboxPage'
 
 const App = () => {
   return (
@@ -15,7 +17,9 @@ const App = () => {
         <NavBar items={navItems} />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/Slider" exact component={SliderPage} />
+            <Route path="/basic-form" exact component={BasicForm} />
+            <Route path="/switch" exact component={SwitchPage} />
+            <Route path="/checkbox" exact component={CheckboxPage} />
           </Switch>
         </div>
       </BrowserRouter>

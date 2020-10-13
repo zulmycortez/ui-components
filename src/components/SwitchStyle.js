@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const sliderHeight = 1.5
 const notchHeight = 1
-const SliderStyle = styled.div`
+const SwitchStyle = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -34,4 +34,4 @@ const SliderStyle = styled.div`
   }
 `
 
-export default SliderStyle
+export default SwitchStyle
