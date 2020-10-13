@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PageStyle from '../../components/PageStyle'
 import PageTitle from '../../components/PageTitle'
-import Checkbox from '../../components/Checkbox'
+import { Checkbox } from '../../components'
 
 const CheckboxPage = () => {
   const [value, setValue] = useState(false)

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import PageStyle from '../../components/PageStyle'
 import PageTitle from '../../components/PageTitle'
-import Switch from '../../components/Switch'
+import { Switch } from '../../components'
 import Section from '../../components/Section'
 
 const SwitchPage = () => {

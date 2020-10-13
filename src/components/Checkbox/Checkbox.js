@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import CheckIcon from '../svg/CheckIcon'
+import CheckIcon from '../../svg/CheckIcon'
 import CheckboxStyle from './CheckboxStyle'
 
 const Checkbox = ({ value, name, onChange, label }) => {

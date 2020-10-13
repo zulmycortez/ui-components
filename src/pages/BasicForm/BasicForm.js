@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import BasicFormStyle from './BasicFormStyle'
 import PageStyle from '../../components/PageStyle'
-import Input from '../../components/Input'
-import Switch from '../../components/Switch'
+import { Input, Switch } from '../../components'
 import PageTitle from '../../components/PageTitle'
 
 const initialValues = {
