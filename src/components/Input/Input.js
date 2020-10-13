@@ -4,7 +4,6 @@ import InputStyle from './InputStyle'
 const Input = ({ value, name, onChange, label, ...props }) => {
   return (
     <InputStyle>
-      <label>{label}</label>
       <input
         value={value}
         name={name}

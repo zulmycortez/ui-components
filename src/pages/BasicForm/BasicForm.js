@@ -1,24 +1,27 @@
 import React, { useState } from 'react'
 import BasicFormStyle from './BasicFormStyle'
 import PageStyle from '../../components/PageStyle'
-import { Input, Switch } from '../../components'
+import { Input, Switch, Button } from '../../components'
 import PageTitle from '../../components/PageTitle'
 
 const initialValues = {
   firstName: '',
   lastName: '',
   address: '',
-  turnOnNotications: '',
-  willRecieveNotications: ''
+  turnOnNotications: ''
 }
 
 const BasicForm = () => {
   const [values, setValues] = useState(initialValues)
+  const [view, setView] = useState("initial")
 
   const onChange = e => {
     setValues({...values, [e.target.name]: e.target.value})
   }
 
+  const onFormSubmit = () => {
+    setView("confirm")
+  }
   return (
     <PageStyle>
       <PageTitle title="Basic Form" />
@@ -47,6 +50,9 @@ const BasicForm = () => {
           name="turnOnNotications"
           onChange={onChange}
         />
+        <Button onClick={onFormSubmit}>
+          Submit
+        </Button>
       </BasicFormStyle>
     </PageStyle>
   )
